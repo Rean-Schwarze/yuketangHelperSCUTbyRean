@@ -9,10 +9,10 @@ A python script used to watch the videos in Rain Classroom(SCUT) automatically m
 
 I modified the script based on the script of Cat1007 and referred to the script of Cyber-Ingwen(https://github.com/Cyber-Ingwen/yuketangHelperCQU)
 
-Since I haven't learnt python yet, there may be some bugs in the script.
-
-And since I have watched all my videos, I am not sure if it really works.
-![image](https://user-images.githubusercontent.com/19246285/210254814-646be1d9-bd20-4c31-925e-2c1a5b7a9457.png)
+test on 2023/5/10:
+![image](https://github.com/Rean-Schwarze/yuketangHelperSCUTbyRean/assets/19246285/416e880f-8171-43c1-826d-7a531a0094c6)
+<img width="858" alt="837f1c9e7d3159760fac4361f255b47" src="https://github.com/Rean-Schwarze/yuketangHelperSCUTbyRean/assets/19246285/368733d2-ac6e-43d1-85fb-39ad0b1c4efa">
+运行一次可能会有一些视频没刷完的，多运行一两次就可以了（
 
 
 #### Original texts:
@@ -29,8 +29,11 @@ https://github.com/heyblackC/yuketangHelper
 
 ### 脚本改进：
 
+#### 2023/05/10:
+- 使用方面略微优化了一下
+
 #### 2023/01/03:
-- Adapt to the current version of Rain Classroom
+- 适配现版本雨课堂
 
 #### Original texts:
 - 修改一些域名及对应的参数，适配本科生系统
@@ -53,7 +56,7 @@ https://github.com/heyblackC/yuketangHelper
 
 5. 打开浏览器，登录雨课堂并获取对应的cookie  [参考](https://blog.csdn.net/lenfranky/article/details/90316262)
 
-Notice: You need to login and get the cookie on "scut.yuketang.cn", instead of "changjiang.yuketang.cn"
+注：需要登陆获取cookie的网址是"scut.yuketang.cn"，不是"changjiang.yuketang.cn"
 
 6. 修改 `videoHelper.py` 源代码并填入你自己的值
 
