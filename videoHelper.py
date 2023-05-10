@@ -2,7 +2,7 @@
 # version 4
 # developed by zk chen
 # modified by Cat1007
-# modified by Rean on 2023/01/02, referring to Cyber-Ingwen
+# modified by Rean on 2023/05/10, referring to Cyber-Ingwen
 # applicable to the ykt of SCUT
 import random
 import time
@@ -11,7 +11,7 @@ import re
 import json
 
 # 以下的csrftoken和sessionid需要改成自己登录后的cookie中对应的字段！！！！而且脚本需在登录雨课堂状态下使用
-# 登录上雨课堂，然后按F12-->选Application-->找到雨课堂的cookies，寻找csrftoken、sessionid字段，并复制到下面两行即可
+# 登录上雨课堂（注意需要登陆的是"https://scut.yuketang.cn/"这个网址），然后按F12-->选Application-->找到雨课堂的cookies，寻找csrftoken、sessionid字段，并复制到下面两行即可
 csrftoken = ""  # 需改成自己的
 sessionid = ""  # 需改成自己的
 university_id = "2627"
@@ -208,6 +208,7 @@ if __name__ == "__main__":
                                  cid+"?role=5", headers=headers).json()['data']['free_sku_id']
             get_url = url_root+"c27/online_courseware/schedule/score_detail/single/%s/0/" % skuid
             ret = requests.get(url=get_url, headers=headers).json()
+            print("正在获取视频列表……")
             for i in ret['data']['leaf_level_infos']:
                 if i['leaf_type'] != leaf_type['video']:
                     continue
@@ -220,7 +221,7 @@ if __name__ == "__main__":
                 course_id = getccid['data']['course_id']
                 print(i['leaf_chapter_title']+" - "+i['leaf_level_title'])
             confirm=input("以上为视频列表，请确认是否刷此课（Y/N）：")
-            if(confirm=="Y"):
+            if(confirm=="Y" or confirm=='y'):
                 for i in ret['data']['leaf_level_infos']:
                     if i['leaf_type'] != leaf_type['video']:
                         continue
