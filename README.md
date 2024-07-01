@@ -1,33 +1,30 @@
-# yuketangHelperSCUTbyRean
-A python script used to watch the videos in Rain Classroom(SCUT) automatically modified by Rean
+# 雨课堂小助手SCUT专版
+哪里不会点哪里，妈妈再也不用担心刷不完雨课堂了（不是
 
+2024/7/1 by Rean
 
+------
 
-### 说点什么：
+### Notice:
 
-#### Notice:
+脚本基于 [Cat1007](https://github.com/Cat1007/yuketangHelperSCUTLite) 基础上修改，以及参考了 [Cyber-Ingwen](https://github.com/Cyber-Ingwen/yuketangHelperCQU) 进行适配
 
-I modified the script based on the script of Cat1007 and referred to the script of Cyber-Ingwen(https://github.com/Cyber-Ingwen/yuketangHelperCQU)
-
-test on 2023/5/10:
+2023/5/10 测试：
 ![image](https://github.com/Rean-Schwarze/yuketangHelperSCUTbyRean/assets/19246285/416e880f-8171-43c1-826d-7a531a0094c6)
 <img width="858" alt="837f1c9e7d3159760fac4361f255b47" src="https://github.com/Rean-Schwarze/yuketangHelperSCUTbyRean/assets/19246285/368733d2-ac6e-43d1-85fb-39ad0b1c4efa">
 运行一次可能会有一些视频没刷完的，多运行一两次就可以了（
 
+#### ps:
 
-#### Original texts:
-
-之前也有想到伪造心跳包的方法去快速刷网课，结果上GitHub一搜发现有师兄已经实现了这个思路。
-
-在此十分感谢@[heyblackC](https://github.com/heyblackC)，让我不用再研究包里变量含义了hhhh
-
-以下是原脚本仓库：
-
-https://github.com/heyblackC/yuketangHelper
+自动测验研究了一下，流程摸到了，但是发现意义不大，因为需要新的token，有这功夫拿到还不如花20s点完（
 
 
 
-### 脚本改进：
+### 更新日志：
+
+#### 2024/07/01:
+
+- 新增自动复读讨论题的功能
 
 #### 2023/05/10:
 - 使用方面略微优化了一下
@@ -35,7 +32,7 @@ https://github.com/heyblackC/yuketangHelper
 #### 2023/01/03:
 - 适配现版本雨课堂
 
-#### Original texts:
+#### 原版:
 - 修改一些域名及对应的参数，适配本科生系统
 - 修复一个正则表达式匹配Bug
 - 修改了一些文本提示
